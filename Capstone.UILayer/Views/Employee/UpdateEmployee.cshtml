@@ -1,0 +1,30 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "UpdateEmployee";
+    Layout = "~/Views/Shared/_CapstoneLayout.cshtml";
+}
+
+<h1>Employee Update Page</h1>
+<form method="post">
+    <input type="hidden" asp-for="EmployeeID" />
+    <label>Staff Name</label>
+    <input type="text" asp-for = "EmployeeName" class="form-control"/>
+    <br/>
+
+    <label>Staff Surname</label>
+    <input type="text" asp-for="EmployeeSurName" class="form-control" />
+    <br />
+
+    <label>Staff Mail</label>
+    <input type="text" asp-for="EmployeeMail" class="form-control" />
+    <br />
+
+    <label>Staff Image</label>
+    <input type="text" asp-for="EmployeeImage" class="form-control" />
+    <br />
+
+    <label>Staff Department</label>
+    <input type="text" asp-for="CategoryID" class="form-control" />
+    <br />
+    <button class="btn btn-warning">Update Staff</button>
+</form>

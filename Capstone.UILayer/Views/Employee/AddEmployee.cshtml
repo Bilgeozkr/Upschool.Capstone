@@ -1,0 +1,36 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "~/Views/Shared/_CapstoneLayout.cshtml";
+}
+
+<h1>New Employee Page</h1>
+<form method="post">
+    <label>Staff Name</label>
+    <input type="text" asp-for="EmployeeName" class="form-control" />
+    <span asp-validation-for="EmployeeName" class="text-danger"></span>
+    <br />
+
+    <label>Staff Surname</label>
+    <input type="text" asp-for="EmployeeSurName" class="form-control" />
+    <span asp-validation-for="EmployeeSurName" class="text-danger"></span>
+    <br />
+
+    <label>Staff Mail</label>
+    <input type="text" asp-for="EmployeeMail" class="form-control" />
+    <span asp-validation-for="EmployeeMail" class="text-danger"></span>
+    <br />
+
+    <label>Staff Image</label>
+    <input type="text" asp-for="EmployeeImage" class="form-control" />
+    <span asp-validation-for="EmployeeImage" class="text-danger"></span>
+    <br />
+
+    <label>Staff Category</label>
+    <input type="text" asp-for="CategoryID" class="form-control" />
+    <span asp-validation-for="CategoryID" class="text-danger"></span>
+    <br />
+    <button class="btn btn-info">Save Staff</button>
+    
+</form>
+
